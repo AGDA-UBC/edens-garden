@@ -24,6 +24,10 @@ namespace UnityEngine.EventSystems
     /// </summary>
     public class OVRInputModule : PointerInputModule
     {
+        [Header("Go VR Controller")]
+        public Transform trackingSpace;
+        public LineRenderer lineRenderer;
+
         [Tooltip("Object which points with Z axis. E.g. CentreEyeAnchor from OVRCameraRig")]
         public Transform rayTransform;
 
@@ -600,7 +604,33 @@ namespace UnityEngine.EventSystems
             leftData.Reset();
 
             //Now set the world space ray. This ray is what the user uses to point at UI elements
-            leftData.worldSpaceRay = new Ray(rayTransform.position, rayTransform.forward);
+            OVRInput.Controller controller = OVRInput.GetConnectedControllers() & (OVRInput.Controller.LTrackedRemote | OVRInput.Controller.RTrackedRemote);
+            if (lineRenderer != null)
+            {
+                lineRenderer.enabled = trackingSpace != null && controller != OVRInput.Controller.None;
+            }
+            if (trackingSpace != null && controller != OVRInput.Controller.None)
+            {
+                controller = ((controller & OVRInput.Controller.LTrackedRemote) != OVRInput.Controller.None) ? OVRInput.Controller.LTrackedRemote : OVRInput.Controller.RTrackedRemote;
+
+                Quaternion orientation = OVRInput.GetLocalControllerRotation(controller);
+                Vector3 localStartPoint = OVRInput.GetLocalControllerPosition(controller);
+
+                Matrix4x4 localToWorld = trackingSpace.localToWorldMatrix;
+                Vector3 worldStartPoint = localToWorld.MultiplyPoint(localStartPoint);
+                Vector3 worldOrientation = localToWorld.MultiplyVector(orientation * Vector3.forward);
+                leftData.worldSpaceRay = new Ray(worldStartPoint, worldOrientation);
+                if (lineRenderer != null)
+                {
+                    lineRenderer.SetPosition(0, worldStartPoint);
+                    lineRenderer.SetPosition(1, worldStartPoint + worldOrientation * 500.0f);
+                }
+            }
+            else
+            {
+                leftData.worldSpaceRay = new Ray(rayTransform.position, rayTransform.forward);
+            }
+
             leftData.scrollDelta = GetExtraScrollDelta();
 
             //Populate some default values

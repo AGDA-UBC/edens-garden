@@ -7,11 +7,8 @@ public class SceneChange : MonoBehaviour
 {
     public string sceneToLoad;
     // Update is called once per frame
-    void Update()
+    public void ChangeScene()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            Application.LoadLevel(sceneToLoad);
-        }
+        Application.LoadLevel(sceneToLoad);
     }
 }
