@@ -266,9 +266,7 @@ PlayerSettings:
     m_Devices: []
   - m_BuildTarget: Android
     m_Enabled: 1
-    m_Devices:
-    - Oculus
-    - split
+    m_Devices: []
   - m_BuildTarget: iOS
     m_Enabled: 0
     m_Devices: []
@@ -687,6 +685,10 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
