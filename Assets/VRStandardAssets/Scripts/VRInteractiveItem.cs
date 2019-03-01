@@ -1,8 +1,7 @@
 using System;
 using UnityEngine;
+using VRStandardAssets.Utils;
 
-namespace VRStandardAssets.Utils
-{
     // This class should be added to any gameobject in the scene
     // that should react to input based on the user's gaze.
     // It contains events that can be subscribed to by classes that
@@ -73,4 +72,3 @@ namespace VRStandardAssets.Utils
                 OnDown();
         }
     }
-}
