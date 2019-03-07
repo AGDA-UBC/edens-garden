@@ -113,11 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &17390570 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1538727058887424, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1699063148}
 --- !u!1 &84183926
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,11 +163,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &114832179 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1391022766006510, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1699063148}
 --- !u!1 &117831887
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,11 +253,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &428660720 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1587602180963074, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1699063148}
 --- !u!1001 &727460734
 Prefab:
   m_ObjectHideFlags: 0
@@ -475,11 +460,6 @@ MonoBehaviour:
   gripSenseAxisChanged: 0
   gripSensePressed: 0
   controllerVisible: 1
---- !u!1 &771225021 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1384746914293964, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1699063148}
 --- !u!1 &835055602
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,11 +665,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1063993473 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1883185261795400, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1699063148}
 --- !u!1001 &1119990881
 Prefab:
   m_ObjectHideFlags: 0
@@ -1012,12 +987,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 2080214598}
-  actualHeadset: {fileID: 428660720}
-  actualLeftController: {fileID: 17390570}
-  actualRightController: {fileID: 114832179}
-  modelAliasLeftController: {fileID: 771225021}
-  modelAliasRightController: {fileID: 1063993473}
+  actualBoundaries: {fileID: 0}
+  actualHeadset: {fileID: 0}
+  actualLeftController: {fileID: 0}
+  actualRightController: {fileID: 0}
+  modelAliasLeftController: {fileID: 0}
+  modelAliasRightController: {fileID: 0}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem
@@ -1720,11 +1695,6 @@ Transform:
   m_Father: {fileID: 1611951061}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2080214598 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013941130086, guid: be540b97364be0a4890e39e62ac89ed1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1699063148}
 --- !u!4 &2080214599 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011401111930, guid: be540b97364be0a4890e39e62ac89ed1,
