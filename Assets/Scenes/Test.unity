@@ -724,6 +724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc73904105d31a54398ea26e7d7876c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fader: {fileID: 429337256}
   playerHeight: 1.8
 --- !u!4 &430140898
 Transform:
