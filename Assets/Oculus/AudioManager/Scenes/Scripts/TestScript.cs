@@ -10,8 +10,10 @@ public class TestScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+
+        testSound1.PlaySoundAt(transform.position);
+
+    }
 	
 
 	// Update is called once per frame
