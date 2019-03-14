@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class TalkingScript : MonoBehaviour {
 
-    Vector3 playerPosition;       // Keeps track of where Player will be teleported.
+    Vector3 AudioLocation;       // Keeps track of where Player will be teleported.
     public SoundFXRef testSound1;
 
     void OnEnable()
@@ -20,9 +21,8 @@ public class TalkingScript : MonoBehaviour {
     void ListenTo(Transform destTransform)
     {
         // Set the new position.
-        playerPosition = destTransform.position;
-
-        testSound1.PlaySoundAt(playerPosition);
+        AudioLocation = destTransform.position;
+        testSound1.PlaySoundAt(AudioLocation);
     }
 }
 

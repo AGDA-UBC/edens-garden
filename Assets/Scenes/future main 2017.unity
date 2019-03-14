@@ -4346,7 +4346,7 @@ MonoBehaviour:
         invSquareFalloff: {x: 1, y: 25}
       soundClips:
       - {fileID: 8300000, guid: 3b6a96f5ce3228e4192eeb36e6344f48, type: 3}
-      visibilityToggle: 0
+      visibilityToggle: 1
     mixerGroup: {fileID: 0}
     maxPlayingSounds: 0
     preloadAudio: 0
@@ -4416,7 +4416,7 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 6424c3cf2e26be9488d0ddeeeb2eff4c, type: 3}
       - {fileID: 8300000, guid: a53c1ec0544a16d43a73e345ac049076, type: 3}
       - {fileID: 8300000, guid: 0e0f00f4385463744aceea3d23cc0d03, type: 3}
-      visibilityToggle: 1
+      visibilityToggle: 0
     mixerGroup: {fileID: 0}
     maxPlayingSounds: 0
     preloadAudio: 0
