@@ -3,8 +3,18 @@ guid: 4e791fb172719774aa18c51a8d43c74e
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: turtle
-  externalObjects: {}
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #50'
+    second: {fileID: 2100000, guid: 2a4aecf72d1fabb489cb5bdf5024f8bc, type: 2}
   materials:
     importMaterials: 1
     materialName: 3

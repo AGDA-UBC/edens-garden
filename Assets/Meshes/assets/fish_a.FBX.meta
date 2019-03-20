@@ -3,8 +3,24 @@ guid: d012b8d31efcae84d86c2b6a29b71c17
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: //RootNode
+    100006: Fish_b
+    400000: Bone001
+    400002: Bone002
+    400004: //RootNode
+    400006: Fish_b
     4300000: Fish_b
-  externalObjects: {}
+    7400000: swim
+    11100000: //RootNode
+    13700000: Fish_b
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #27'
+    second: {fileID: 2100000, guid: 703769dba6c66da49b817aefd9647c00, type: 2}
   materials:
     importMaterials: 1
     materialName: 3

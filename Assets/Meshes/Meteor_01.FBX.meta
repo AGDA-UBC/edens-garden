@@ -3,8 +3,19 @@ guid: 3a3404f7ce54564418ec3317a1fd2c18
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Meteor_01
-  externalObjects: {}
+    6400000: //RootNode
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Standardmaterial
+    second: {fileID: 2100000, guid: 959a0c11e9348904a87fcc6105e2ff5f, type: 2}
   materials:
     importMaterials: 1
     materialName: 3

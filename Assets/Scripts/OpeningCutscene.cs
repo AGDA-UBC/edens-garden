@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class OpeningCutscene : MonoBehaviour {
 
+
+    // Scene Camera
     public GameObject mainOVRCamera;
     public GameObject marketPlaceCamera;
     public GameObject marketPlaceCamera2;
     public GameObject palaceCamera;
     public GameObject residentialCam;
     public GameObject oceanCam;
+
+
+    // Teleport spots
+    public GameObject eventOneTeleport;
 
 
     //Ryder's Audio
@@ -71,10 +77,11 @@ public class OpeningCutscene : MonoBehaviour {
         yield return new WaitWhile(() => line8.isPlaying);
         line9.Play();
         yield return new WaitWhile(() => line9.isPlaying);
+        eventOneTeleport.SetActive(true);
         mainOVRCamera.SetActive(true);
         residentialCam.SetActive(false);
-        openingMusic.loop = false;
-        openingMusic.Stop();
-        gameMusic.Play();
+        // openingMusic.loop = false;
+        // openingMusic.Stop();
+        // gameMusic.Play();
     }
 }

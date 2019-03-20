@@ -3,8 +3,18 @@ guid: f1aab9755074981429a6d2d6805be884
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: crab
-  externalObjects: {}
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shell01
+    second: {fileID: 2100000, guid: 8cafc8f05cae25f4cb0b7bb9c4731a68, type: 2}
   materials:
     importMaterials: 1
     materialName: 3
