@@ -16,9 +16,6 @@ public class ElijahScene : MonoBehaviour {
     public AudioSource rLine4;
     public AudioSource rLine5;
     public AudioSource rLine6;
-    public AudioSource rLine7;
-    public AudioSource rLine8;
-    public AudioSource rLine9;
 
     //Elijah's Audio
     public AudioSource eLine1;
@@ -52,13 +49,13 @@ public class ElijahScene : MonoBehaviour {
     {
         if (!hasBeenPlayed)
         {
-            hasBeenPlayed = true;
             StartCoroutine(PlayDialogue());
         }
     }
 
     IEnumerator PlayDialogue()
     {
+        hasBeenPlayed = true;
         teleportSpots.SetActive(false);
         yield return new WaitForSeconds(.5f);
         // Elijah

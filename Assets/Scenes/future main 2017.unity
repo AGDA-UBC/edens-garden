@@ -363,31 +363,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elijah: {fileID: 56525658}
   teleportSpots: {fileID: 302897215}
-  rLine1: {fileID: 0}
-  rLine2: {fileID: 0}
-  rLine3: {fileID: 0}
-  rLine4: {fileID: 0}
-  rLine5: {fileID: 0}
-  rLine6: {fileID: 0}
-  rLine7: {fileID: 0}
-  rLine8: {fileID: 0}
-  rLine9: {fileID: 0}
-  eLine1: {fileID: 0}
-  eLine2: {fileID: 0}
-  eLine3: {fileID: 0}
-  eLine4: {fileID: 0}
-  eLine5: {fileID: 0}
-  eLine6: {fileID: 0}
-  eLine7: {fileID: 0}
-  eLine8: {fileID: 0}
-  eLine9: {fileID: 0}
-  eLine10: {fileID: 0}
-  eLine11: {fileID: 0}
-  eLine12: {fileID: 0}
-  eLine13: {fileID: 0}
-  eLine14: {fileID: 0}
-  eLine15: {fileID: 0}
-  eLine16: {fileID: 0}
+  rLine1: {fileID: 1277015639}
+  rLine2: {fileID: 2024025095}
+  rLine3: {fileID: 676721015}
+  rLine4: {fileID: 483177778}
+  rLine5: {fileID: 379983847}
+  rLine6: {fileID: 1059971461}
+  eLine1: {fileID: 1310965779}
+  eLine2: {fileID: 370423614}
+  eLine3: {fileID: 1808999399}
+  eLine4: {fileID: 1311209855}
+  eLine5: {fileID: 494449399}
+  eLine6: {fileID: 1218884498}
+  eLine7: {fileID: 449307344}
+  eLine8: {fileID: 695164005}
+  eLine9: {fileID: 1427112804}
+  eLine10: {fileID: 880597481}
+  eLine11: {fileID: 1654272050}
+  eLine12: {fileID: 2138078839}
+  eLine13: {fileID: 2034436573}
+  eLine14: {fileID: 543088083}
+  eLine15: {fileID: 654794271}
+  eLine16: {fileID: 1587221965}
 --- !u!114 &56525658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,6 +396,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &56525660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 56525656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d755e68cd92c18147b4068496a88db4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NormalMaterial: {fileID: 2100000, guid: 1331fff4b797e934f9dda03e8801d6e0, type: 2}
+  m_OverMaterial: {fileID: 2100000, guid: 36ac08bf8a2d0ff4a9546100c0139088, type: 2}
+  m_ClickedMaterial: {fileID: 2100000, guid: bb5b02dca4e40024a8985968dcbb168b, type: 2}
+  m_DoubleClickedMaterial: {fileID: 2100000, guid: 6c24bafebfdd8d5409c9b756aad7b191,
+    type: 2}
+  m_InteractiveItem: {fileID: 56525658}
+  m_Renderer: {fileID: 713777537}
 --- !u!1 &62960793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,7 +2303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &302897216
 Transform:
   m_ObjectHideFlags: 0
@@ -6536,6 +6551,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: dcf79bb8d21074a4bb9d95ec69c9d4ae, type: 3}
   m_PrefabInternal: {fileID: 707820932}
+--- !u!23 &713777537 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300000, guid: a5358981d320088418368891e17cbaf8,
+    type: 3}
+  m_PrefabInternal: {fileID: 1835777186}
 --- !u!1 &718450398
 GameObject:
   m_ObjectHideFlags: 0
@@ -12559,7 +12579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1478428771
 Transform:
   m_ObjectHideFlags: 0
@@ -14216,14 +14236,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644366744}
-  m_LocalRotation: {x: 0, y: 0.9848078, z: -0, w: -0.17364809}
-  m_LocalPosition: {x: -24.1, y: 1.8, z: 18.4}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.6, y: 1, z: -7.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1478428771}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 200, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1644366746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16223,7 +16243,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1877715800}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b35ea9e811dfaf41ab6381a98b4d119, type: 3}
   m_Name: 
@@ -17350,7 +17370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1970729022
 Transform:
   m_ObjectHideFlags: 0
