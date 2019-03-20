@@ -9,6 +9,8 @@ public class OpeningCutscene : MonoBehaviour {
     public GameObject marketPlaceCamera2;
     public GameObject palaceCamera;
     public GameObject residentialCam;
+    public GameObject oceanCam;
+
 
     //Ryder's Audio
     public AudioSource line1;
@@ -21,6 +23,10 @@ public class OpeningCutscene : MonoBehaviour {
     public AudioSource line8;
     public AudioSource line9;
 
+    // Background Music
+    public AudioSource openingMusic;
+    public AudioSource gameMusic;
+
 
     void Start () {
         StartCoroutine(OpeningCamera());
@@ -29,15 +35,18 @@ public class OpeningCutscene : MonoBehaviour {
 
     IEnumerator OpeningCamera()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(13);
         marketPlaceCamera2.SetActive(true);
         marketPlaceCamera.SetActive(false);
-        yield return new WaitForSeconds(9);
+        yield return new WaitForSeconds(16);
         palaceCamera.SetActive(true);
         marketPlaceCamera2.SetActive(false);
         yield return new WaitForSeconds(14);
-        residentialCam.SetActive(true);
+        oceanCam.SetActive(true);
         palaceCamera.SetActive(false);
+        yield return new WaitForSeconds(10);
+        residentialCam.SetActive(true);
+        oceanCam.SetActive(false);
         
     }
 
@@ -61,5 +70,11 @@ public class OpeningCutscene : MonoBehaviour {
         line8.Play();
         yield return new WaitWhile(() => line8.isPlaying);
         line9.Play();
+        yield return new WaitWhile(() => line9.isPlaying);
+        mainOVRCamera.SetActive(true);
+        residentialCam.SetActive(false);
+        openingMusic.loop = false;
+        openingMusic.Stop();
+        gameMusic.Play();
     }
 }
