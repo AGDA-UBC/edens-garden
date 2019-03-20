@@ -28,6 +28,7 @@ public class OpeningCutscene : MonoBehaviour {
     public AudioSource line7;
     public AudioSource line8;
     public AudioSource line9;
+    public AudioSource line10;
 
     // Background Music
     public AudioSource openingMusic;
@@ -80,6 +81,8 @@ public class OpeningCutscene : MonoBehaviour {
         eventOneTeleport.SetActive(true);
         mainOVRCamera.SetActive(true);
         residentialCam.SetActive(false);
+        yield return new WaitForSeconds(8);
+        line10.Play();
         // openingMusic.loop = false;
         // openingMusic.Stop();
         // gameMusic.Play();
