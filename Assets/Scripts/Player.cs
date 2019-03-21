@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using VRStandardAssets.Utils;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private VRCameraFade fader;
 
     Vector3 playerPosition;       // Keeps track of where Player will be teleported.
 
@@ -10,21 +12,31 @@ public class Player : MonoBehaviour
 
     void OnEnable()
     {
-        TeleportManager.DoTeleport += MoveTo;
+        TeleportManager.DoTeleport += Teleport;
     }
 
     void OnDisable()
     {
-        TeleportManager.DoTeleport -= MoveTo;
+        TeleportManager.DoTeleport -= Teleport;
     }
 
-    void MoveTo(Transform destTransform)
+    void Teleport(Transform destTransform)
     {
         // Set the new position.
         playerPosition = destTransform.position;
         // Player's eye level should be playerHeight above the new position.
         playerPosition.y += playerHeight;
+        // Fade out
+        fader.FadeOut(true);
         // Move Player.
-        transform.position = playerPosition;
+        fader.OnFadeComplete += MoveTo;
     }
+
+    void MoveTo()
+    {
+        transform.position = playerPosition;
+        fader.OnFadeComplete -= MoveTo;
+        fader.FadeIn(true);
+    }
+
 }

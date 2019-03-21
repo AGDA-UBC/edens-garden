@@ -9,6 +9,7 @@ public class SceneChange : MonoBehaviour
     // Update is called once per frame
     public void ChangeScene()
     {
+        GameControl.control.Save();
         Application.LoadLevel(sceneToLoad);
     }
 }
