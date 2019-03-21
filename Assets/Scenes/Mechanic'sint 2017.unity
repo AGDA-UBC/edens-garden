@@ -1650,19 +1650,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00087
+      value: -0.00023
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00087
+      value: -0.00023000006
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.001
+      value: -0.00023000006
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00093
+      value: -0.00023000006
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1687,26 +1687,6 @@ Prefab:
     - target: {fileID: 400004, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9777153
-      objectReference: {fileID: 0}
-    - target: {fileID: 400042, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00109
-      objectReference: {fileID: 0}
-    - target: {fileID: 400040, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00114
-      objectReference: {fileID: 0}
-    - target: {fileID: 400056, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.00402
-      objectReference: {fileID: 0}
-    - target: {fileID: 400038, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.00286
-      objectReference: {fileID: 0}
-    - target: {fileID: 400032, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.00039
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88bb681787b166f4095031cb853eca6c, type: 3}
