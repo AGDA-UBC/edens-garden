@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: 7581fd162be36f4408a66a19f98edaf5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ambientLight1
+    100002: ambientLight1 1
+    100004: ambientLight1 2
+    100006: ambientLight1 3
+    100008: ambientLight2
+    100010: anemonie
+    100012: anemonie1
+    100014: deck
+    100016: //RootNode
+    100018: group1
+    100020: group2
+    100022: inside_palace
+    100024: mushcoral
+    100026: mushcoral 1
+    100028: mushcoral1
+    100030: mushcoral1 1
+    100032: mushcoral2
+    100034: mushcoral2 1
+    100036: mushcoral3
+    100038: mushcoral3 1
+    100040: mushcoral4
+    100042: objects_for_garden:pCylinder1
+    100044: objects_for_garden:pCylinder2
+    100046: objects_for_garden:pCylinder3
+    100048: objects_for_garden:pSphere1
+    100050: pSphere1
+    100052: pSphere2
+    100054: pSphere3
+    100056: pSphere4
+    100058: pSphere5
+    100060: pSphere6
+    100062: pSphere7
+    100064: starfish
+    100066: starfish1
+    100068: starfish2
+    100070: T_coral
+    100072: T_coral1
+    100074: T_coral2
+    100076: T_coral3
+    100078: T_coral4
+    100080: T_coral5
+    100082: T_coral6
+    100084: T_coral7
+    100086: tubecoral
+    100088: tubecoral 1
+    100090: tubecoral1
+    100092: tubecoral1 1
+    100094: tubecoral1 2
+    100096: tubecoral10
+    100098: tubecoral11
+    100100: tubecoral2
+    100102: tubecoral2 1
+    100104: tubecoral3
+    100106: tubecoral3 1
+    100108: tubecoral3 2
+    100110: tubecoral4
+    100112: tubecoral5
+    100114: tubecoral6
+    100116: tubecoral7
+    100118: tubecoral8
+    100120: tubecoral9
+    100122: tubesunited_1
+    100124: tubesunited_2
+    100126: tubesunited_3
+    100128: various_sealife2:anemonie
+    100130: various_sealife2:barnicle
+    100132: various_sealife2:mushcoral
+    100134: various_sealife2:starfish
+    100136: various_sealife2:T_coral
+    100138: various_sealife2:tubecoral
+    100140: various_sealife2:tubecoral1
+    100142: various_sealife2:tubecoral2
+    100144: various_sealife2:tubecoral3
+    400000: ambientLight1
+    400002: ambientLight1 1
+    400004: ambientLight1 2
+    400006: ambientLight1 3
+    400008: ambientLight2
+    400010: anemonie
+    400012: anemonie1
+    400014: deck
+    400016: //RootNode
+    400018: group1
+    400020: group2
+    400022: inside_palace
+    400024: mushcoral
+    400026: mushcoral 1
+    400028: mushcoral1
+    400030: mushcoral1 1
+    400032: mushcoral2
+    400034: mushcoral2 1
+    400036: mushcoral3
+    400038: mushcoral3 1
+    400040: mushcoral4
+    400042: objects_for_garden:pCylinder1
+    400044: objects_for_garden:pCylinder2
+    400046: objects_for_garden:pCylinder3
+    400048: objects_for_garden:pSphere1
+    400050: pSphere1
+    400052: pSphere2
+    400054: pSphere3
+    400056: pSphere4
+    400058: pSphere5
+    400060: pSphere6
+    400062: pSphere7
+    400064: starfish
+    400066: starfish1
+    400068: starfish2
+    400070: T_coral
+    400072: T_coral1
+    400074: T_coral2
+    400076: T_coral3
+    400078: T_coral4
+    400080: T_coral5
+    400082: T_coral6
+    400084: T_coral7
+    400086: tubecoral
+    400088: tubecoral 1
+    400090: tubecoral1
+    400092: tubecoral1 1
+    400094: tubecoral1 2
+    400096: tubecoral10
+    400098: tubecoral11
+    400100: tubecoral2
+    400102: tubecoral2 1
+    400104: tubecoral3
+    400106: tubecoral3 1
+    400108: tubecoral3 2
+    400110: tubecoral4
+    400112: tubecoral5
+    400114: tubecoral6
+    400116: tubecoral7
+    400118: tubecoral8
+    400120: tubecoral9
+    400122: tubesunited_1
+    400124: tubesunited_2
+    400126: tubesunited_3
+    400128: various_sealife2:anemonie
+    400130: various_sealife2:barnicle
+    400132: various_sealife2:mushcoral
+    400134: various_sealife2:starfish
+    400136: various_sealife2:T_coral
+    400138: various_sealife2:tubecoral
+    400140: various_sealife2:tubecoral1
+    400142: various_sealife2:tubecoral2
+    400144: various_sealife2:tubecoral3
+    2100000: various_sealife2_lambert4
+    2100002: various_sealife2_lambert3
+    2100004: various_sealife2_lambert8
+    2100006: various_sealife2_lambert7
+    2100008: various_sealife2_lambert5
+    2100010: lambert1
+    2100012: lambert2
+    2100014: lambertwalls
+    2100016: various_sealife2_lambert6
+    2100018: blinn1
+    2100020: lambert3
+    2300000: anemonie
+    2300002: anemonie1
+    2300004: deck
+    2300006: inside_palace
+    2300008: mushcoral
+    2300010: mushcoral 1
+    2300012: mushcoral1
+    2300014: mushcoral1 1
+    2300016: mushcoral2
+    2300018: mushcoral2 1
+    2300020: mushcoral3
+    2300022: mushcoral3 1
+    2300024: mushcoral4
+    2300026: objects_for_garden:pCylinder1
+    2300028: objects_for_garden:pCylinder2
+    2300030: objects_for_garden:pCylinder3
+    2300032: objects_for_garden:pSphere1
+    2300034: pSphere1
+    2300036: pSphere2
+    2300038: pSphere3
+    2300040: pSphere4
+    2300042: pSphere5
+    2300044: pSphere6
+    2300046: pSphere7
+    2300048: starfish
+    2300050: starfish1
+    2300052: starfish2
+    2300054: T_coral
+    2300056: T_coral1
+    2300058: T_coral2
+    2300060: T_coral3
+    2300062: T_coral4
+    2300064: T_coral5
+    2300066: T_coral6
+    2300068: T_coral7
+    2300070: tubecoral
+    2300072: tubecoral 1
+    2300074: tubecoral1
+    2300076: tubecoral1 1
+    2300078: tubecoral1 2
+    2300080: tubecoral10
+    2300082: tubecoral11
+    2300084: tubecoral2
+    2300086: tubecoral2 1
+    2300088: tubecoral3
+    2300090: tubecoral3 1
+    2300092: tubecoral3 2
+    2300094: tubecoral4
+    2300096: tubecoral5
+    2300098: tubecoral6
+    2300100: tubecoral7
+    2300102: tubecoral8
+    2300104: tubecoral9
+    2300106: various_sealife2:anemonie
+    2300108: various_sealife2:barnicle
+    2300110: various_sealife2:mushcoral
+    2300112: various_sealife2:starfish
+    2300114: various_sealife2:T_coral
+    2300116: various_sealife2:tubecoral
+    2300118: various_sealife2:tubecoral1
+    2300120: various_sealife2:tubecoral2
+    2300122: various_sealife2:tubecoral3
+    3300000: anemonie
+    3300002: anemonie1
+    3300004: deck
+    3300006: inside_palace
+    3300008: mushcoral
+    3300010: mushcoral 1
+    3300012: mushcoral1
+    3300014: mushcoral1 1
+    3300016: mushcoral2
+    3300018: mushcoral2 1
+    3300020: mushcoral3
+    3300022: mushcoral3 1
+    3300024: mushcoral4
+    3300026: objects_for_garden:pCylinder1
+    3300028: objects_for_garden:pCylinder2
+    3300030: objects_for_garden:pCylinder3
+    3300032: objects_for_garden:pSphere1
+    3300034: pSphere1
+    3300036: pSphere2
+    3300038: pSphere3
+    3300040: pSphere4
+    3300042: pSphere5
+    3300044: pSphere6
+    3300046: pSphere7
+    3300048: starfish
+    3300050: starfish1
+    3300052: starfish2
+    3300054: T_coral
+    3300056: T_coral1
+    3300058: T_coral2
+    3300060: T_coral3
+    3300062: T_coral4
+    3300064: T_coral5
+    3300066: T_coral6
+    3300068: T_coral7
+    3300070: tubecoral
+    3300072: tubecoral 1
+    3300074: tubecoral1
+    3300076: tubecoral1 1
+    3300078: tubecoral1 2
+    3300080: tubecoral10
+    3300082: tubecoral11
+    3300084: tubecoral2
+    3300086: tubecoral2 1
+    3300088: tubecoral3
+    3300090: tubecoral3 1
+    3300092: tubecoral3 2
+    3300094: tubecoral4
+    3300096: tubecoral5
+    3300098: tubecoral6
+    3300100: tubecoral7
+    3300102: tubecoral8
+    3300104: tubecoral9
+    3300106: various_sealife2:anemonie
+    3300108: various_sealife2:barnicle
+    3300110: various_sealife2:mushcoral
+    3300112: various_sealife2:starfish
+    3300114: various_sealife2:T_coral
+    3300116: various_sealife2:tubecoral
+    3300118: various_sealife2:tubecoral1
+    3300120: various_sealife2:tubecoral2
+    3300122: various_sealife2:tubecoral3
+    4300000: various_sealife2:starfish
+    4300002: various_sealife2:anemonie
+    4300004: various_sealife2:barnicle
+    4300006: various_sealife2:T_coral
+    4300008: various_sealife2:tubecoral
+    4300010: various_sealife2:tubecoral1
+    4300012: various_sealife2:tubecoral2
+    4300014: various_sealife2:tubecoral3
+    4300016: tubecoral1
+    4300018: tubecoral3
+    4300020: T_coral
+    4300022: anemonie
+    4300024: tubecoral
+    4300026: tubecoral1
+    4300028: tubecoral2
+    4300030: tubecoral3
+    4300032: tubecoral
+    4300034: tubecoral1
+    4300036: tubecoral2
+    4300038: tubecoral3
+    4300040: tubecoral4
+    4300042: tubecoral5
+    4300044: tubecoral6
+    4300046: tubecoral7
+    4300048: tubecoral8
+    4300050: tubecoral9
+    4300052: tubecoral10
+    4300054: tubecoral11
+    4300056: T_coral1
+    4300058: deck
+    4300060: inside_palace
+    4300062: anemonie1
+    4300064: starfish
+    4300066: mushcoral3
+    4300068: various_sealife2:mushcoral
+    4300070: mushcoral2
+    4300072: mushcoral1
+    4300074: mushcoral
+    4300076: mushcoral
+    4300078: mushcoral2
+    4300080: mushcoral1
+    4300082: mushcoral3
+    4300084: mushcoral4
+    4300086: T_coral2
+    4300088: T_coral3
+    4300090: starfish1
+    4300092: starfish2
+    4300094: T_coral4
+    4300096: T_coral5
+    4300098: T_coral6
+    4300100: T_coral7
+    4300102: objects_for_garden:pCylinder1
+    4300104: objects_for_garden:pCylinder2
+    4300106: objects_for_garden:pCylinder3
+    4300108: objects_for_garden:pSphere1
+    4300110: pSphere1
+    4300112: pSphere2
+    4300114: pSphere3
+    4300116: pSphere4
+    4300118: pSphere5
+    4300120: pSphere6
+    4300122: pSphere7
+    10800000: ambientLight1
+    10800002: ambientLight1 1
+    10800004: ambientLight1 2
+    10800006: ambientLight1 3
+    10800008: ambientLight2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
