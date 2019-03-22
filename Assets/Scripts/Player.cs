@@ -3,12 +3,12 @@ using VRStandardAssets.Utils;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private VRCameraFade fader;
+    [SerializeField] public VRCameraFade fader;
 
     Vector3 playerPosition;       // Keeps track of where Player will be teleported.
 
     [SerializeField]
-    float playerHeight = 1.8f;
+    float playerHeight = 1.494f;
 
     void OnEnable()
     {
@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
         playerPosition.y += playerHeight;
         // Fade out
         fader.FadeOut(true);
+        Debug.Log("Printing");
         // Move Player.
         fader.OnFadeComplete += MoveTo;
     }

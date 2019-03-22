@@ -31,6 +31,10 @@ namespace VRStandardAssets.Utils
 
         public bool IsFading { get { return m_IsFading; } }
 
+        public void SetFading(bool status) {
+            m_IsFading = status;
+        }
+
 
         private void Awake()
         {
@@ -147,6 +151,7 @@ namespace VRStandardAssets.Utils
         {
             // Fading is now happening.  This ensures it won't be interupted by non-coroutine calls.
             m_IsFading = true;
+            Debug.Log("got here");
 
             // Execute this loop once per frame until the timer exceeds the duration.
             float timer = 0f;
@@ -159,9 +164,11 @@ namespace VRStandardAssets.Utils
                 timer += Time.deltaTime;
                 yield return null;
             }
+            Debug.Log("Going to be set to false");
 
             // Fading is finished so allow other fading calls again.
             m_IsFading = false;
+            Debug.Log("Maybe false now?");
 
             // If anything is subscribed to OnFadeComplete call it.
             if (OnFadeComplete != null)
