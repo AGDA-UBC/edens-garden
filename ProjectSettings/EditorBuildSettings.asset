@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/future main 2017.unity
+    guid: 2d6d1598a6da0e4479af517de247d2e7
+  - enabled: 1
+    path: Assets/Scenes/Mechanic'sint 2017.unity
+    guid: 941206f87b0ce764795ab3789f343df4

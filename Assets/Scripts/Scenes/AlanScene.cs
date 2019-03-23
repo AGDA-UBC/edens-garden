@@ -8,7 +8,9 @@ public class AlanScene : MonoBehaviour
     public VRStandardAssets.Utils.VRInteractiveItem alan;
     private bool hasBeenPlayed = false;
     public GameObject teleportSpots;
-    static public bool okayToTriggerMechanic = false;
+    public GameObject mechanicsGuild;
+    public AudioSource backgroundMusicBefore;
+    public AudioSource backgroundMusicAfter;
 
     //Ryder's Audio
     public AudioSource rLine1;
@@ -17,6 +19,7 @@ public class AlanScene : MonoBehaviour
     public AudioSource rLine4;
     public AudioSource rLine5;
     public AudioSource rLine6;
+    public AudioSource rLine7;
 
     //Alan's Audio
     public AudioSource aLine1;
@@ -48,6 +51,10 @@ public class AlanScene : MonoBehaviour
 
     IEnumerator PlayDialogue()
     {
+        backgroundMusicBefore.loop = false;
+        backgroundMusicBefore.Stop();
+        backgroundMusicAfter.Play();
+
         hasBeenPlayed = true;
         teleportSpots.SetActive(false);
         yield return new WaitForSeconds(.5f);
@@ -73,16 +80,16 @@ public class AlanScene : MonoBehaviour
         yield return new WaitWhile(() => aLine3.isPlaying);
 
         // Ryder - But you're still
-        rLine3.Play();
-        yield return new WaitWhile(() => rLine3.isPlaying);
+        rLine4.Play();
+        yield return new WaitWhile(() => rLine4.isPlaying);
 
         // Alan - I'm a tween
         aLine3.Play();
         yield return new WaitWhile(() => aLine3.isPlaying);
 
         // Ryder - Hahaha, I'm looking forward
-        rLine4.Play();
-        yield return new WaitWhile(() => rLine4.isPlaying);
+        rLine5.Play();
+        yield return new WaitWhile(() => rLine5.isPlaying);
 
         // Alan - Grr...
         aLine4.Play();
@@ -95,14 +102,16 @@ public class AlanScene : MonoBehaviour
         yield return new WaitWhile(() => aLine7.isPlaying);
 
         // Ryder - Calvin from...
-        rLine5.Play();
-        yield return new WaitWhile(() => rLine5.isPlaying);
         rLine6.Play();
         yield return new WaitWhile(() => rLine6.isPlaying);
+        rLine7.Play();
+        yield return new WaitWhile(() => rLine7.isPlaying);
 
         alan.enabled = false;
         teleportSpots.SetActive(true);
-        okayToTriggerMechanic = true;
+
+        mechanicsGuild.GetComponent<SceneChange>().enabled = true;
+        
 
 
     }

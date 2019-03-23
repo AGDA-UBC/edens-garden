@@ -57,9 +57,10 @@ public class MoveToScene2 : MonoBehaviour {
     {
         mainOVRCamera.GetComponent<AudioListener>().enabled = false;
         mainOVRCamera.GetComponent<LineRenderer>().enabled = false;
+        mainOVRCamera.GetComponent<VREyeRaycaster>().enabled = false;
         marketPlaceCamera.SetActive(true);
         mainOVRCamera.GetComponent<Camera>().enabled = false;
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         mainOVRCamera.GetComponent<Camera>().enabled = true;
         mainOVRCamera.GetComponent<AudioListener>().enabled = true;
         mainOVRCamera.GetComponent<LineRenderer>().enabled = true;

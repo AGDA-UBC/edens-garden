@@ -6,10 +6,21 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour
 {
     public string sceneToLoad;
-    // Update is called once per frame
+    public VRStandardAssets.Utils.VRInteractiveItem clickable;
+
+
+    void OnEnable()
+    {
+        clickable.OnClick += ChangeScene;
+    }
+
+    void OnDisable()
+    {
+        clickable.OnClick -= ChangeScene;
+    }
+
     public void ChangeScene()
     {
-        GameControl.control.Save();
         Application.LoadLevel(sceneToLoad);
     }
 }
