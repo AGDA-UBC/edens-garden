@@ -13,6 +13,7 @@ public class AlanScene : MonoBehaviour
     public AudioSource backgroundMusicBefore;
     public AudioSource backgroundMusicAfter;
     public GameObject player;
+    public GameObject shardButton;
 
     //Ryder's Audio
     public AudioSource rLine1;
@@ -112,6 +113,7 @@ public class AlanScene : MonoBehaviour
 
         mechanicsGuild.GetComponent<SceneChange>().enabled = true;
         palace.GetComponent<SceneChange>().enabled = true;
+        shardButton.SetActive(true);
 
 
 
