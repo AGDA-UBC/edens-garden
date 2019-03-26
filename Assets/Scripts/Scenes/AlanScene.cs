@@ -9,8 +9,10 @@ public class AlanScene : MonoBehaviour
     private bool hasBeenPlayed = false;
     public GameObject teleportSpots;
     public GameObject mechanicsGuild;
+    public GameObject palace;
     public AudioSource backgroundMusicBefore;
     public AudioSource backgroundMusicAfter;
+    public GameObject player;
 
     //Ryder's Audio
     public AudioSource rLine1;
@@ -43,7 +45,7 @@ public class AlanScene : MonoBehaviour
 
     void TriggerDialogue()
     {
-        if (!hasBeenPlayed && RazelScene.okayToTriggerAlan)
+        if (!hasBeenPlayed && distanceIsCloseEnough())
         {
             StartCoroutine(PlayDialogue());
         }
@@ -84,22 +86,20 @@ public class AlanScene : MonoBehaviour
         yield return new WaitWhile(() => rLine4.isPlaying);
 
         // Alan - I'm a tween
-        aLine3.Play();
-        yield return new WaitWhile(() => aLine3.isPlaying);
+        aLine4.Play();
+        yield return new WaitWhile(() => aLine4.isPlaying);
 
         // Ryder - Hahaha, I'm looking forward
         rLine5.Play();
         yield return new WaitWhile(() => rLine5.isPlaying);
 
         // Alan - Grr...
-        aLine4.Play();
-        yield return new WaitWhile(() => aLine4.isPlaying);
         aLine5.Play();
         yield return new WaitWhile(() => aLine5.isPlaying);
         aLine6.Play();
         yield return new WaitWhile(() => aLine6.isPlaying);
-        aLine7.Play();
-        yield return new WaitWhile(() => aLine7.isPlaying);
+        //aLine7.Play();
+        //yield return new WaitWhile(() => aLine7.isPlaying);
 
         // Ryder - Calvin from...
         rLine6.Play();
@@ -111,8 +111,22 @@ public class AlanScene : MonoBehaviour
         teleportSpots.SetActive(true);
 
         mechanicsGuild.GetComponent<SceneChange>().enabled = true;
-        
+        palace.GetComponent<SceneChange>().enabled = true;
 
 
+
+
+    }
+
+    bool distanceIsCloseEnough()
+    {
+        if ((alan.transform.position - player.transform.position).magnitude < 4)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

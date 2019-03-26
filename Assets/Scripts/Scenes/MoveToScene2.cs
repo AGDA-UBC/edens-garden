@@ -19,9 +19,9 @@ public class MoveToScene2 : MonoBehaviour {
     public AudioSource backgroundMusicBefore;
     public AudioSource backgroundMusicAfter;
 
-    public AudioSource rLine1;
+    // public AudioSource rLine1;
     public AudioSource rLine2;
-    public AudioSource rLine3;
+    // public AudioSource rLine3;
 
     void OnEnable()
     {
@@ -37,7 +37,7 @@ public class MoveToScene2 : MonoBehaviour {
     {
         if (ElijahScene.okayToTriggerDialogueThree && !sceneHasBeenTriggered)
         {
-            StartCoroutine(ShowMarketPlace());
+            // StartCoroutine(ShowMarketPlace());
             StartCoroutine(ChangeScene());
             //System.Action fadeCallback = null;
             //fadeCallback = () =>
@@ -58,32 +58,36 @@ public class MoveToScene2 : MonoBehaviour {
         mainOVRCamera.GetComponent<AudioListener>().enabled = false;
         mainOVRCamera.GetComponent<LineRenderer>().enabled = false;
         mainOVRCamera.GetComponent<VREyeRaycaster>().enabled = false;
+        mainOVRCamera.GetComponent<Reticle>().enabled = false;
         marketPlaceCamera.SetActive(true);
         mainOVRCamera.GetComponent<Camera>().enabled = false;
         yield return new WaitForSeconds(5);
         mainOVRCamera.GetComponent<Camera>().enabled = true;
         mainOVRCamera.GetComponent<AudioListener>().enabled = true;
         mainOVRCamera.GetComponent<LineRenderer>().enabled = true;
+        mainOVRCamera.GetComponent<VREyeRaycaster>().enabled = true;
+        mainOVRCamera.GetComponent<Reticle>().enabled = true;
         marketPlaceCamera.SetActive(false);
         marketplaceTeleportSpots.SetActive(true);
-        residentialTeleportSpots.SetActive(true);
-        enabled = false;       
+        residentialTeleportSpots.SetActive(true);       
     }
 
     IEnumerator ChangeScene()
     {
         sceneHasBeenTriggered = true;
-        residentialTeleportSpots.SetActive(false);
+        marketplaceTeleportSpots.SetActive(true);
+        //residentialTeleportSpots.SetActive(false);
         backgroundMusicBefore.loop = false;
         backgroundMusicBefore.Stop();
         backgroundMusicAfter.Play();
-        yield return new WaitForSeconds(.5f);
-        rLine1.Play();
-        yield return new WaitWhile(() => rLine1.isPlaying);
+        yield return new WaitForSeconds(2);
+        //rLine1.Play();
+        //yield return new WaitWhile(() => rLine1.isPlaying);
         rLine2.Play();
         yield return new WaitWhile(() => rLine2.isPlaying);
-        rLine3.Play();
-        yield return new WaitWhile(() => rLine3.isPlaying);
+        // rLine3.Play();
+        // yield return new WaitWhile(() => rLine3.isPlaying);
+        enabled = false;
     }
 
 }

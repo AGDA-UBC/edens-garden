@@ -8,6 +8,8 @@ public class ElijahScene : MonoBehaviour {
     public VRInteractiveItem elijah;
     private bool hasBeenPlayed = false;
     public GameObject teleportSpots;
+    public Rigidbody jokePackage;
+    public GameObject player;
 
     static public bool okayToTriggerDialogueThree = false;
 
@@ -49,7 +51,7 @@ public class ElijahScene : MonoBehaviour {
 
     void TriggerDialogue()
     {
-        if (!hasBeenPlayed)
+        if (!hasBeenPlayed && distanceIsCloseEnough())
         {
             StartCoroutine(PlayDialogue());
         }
@@ -67,22 +69,26 @@ public class ElijahScene : MonoBehaviour {
         yield return new WaitWhile(() => eLine2.isPlaying);
         // Ryder
         rLine1.Play();
+        jokePackage.gameObject.SetActive(true);
+        jokePackage.position = player.transform.position;
+        jokePackage.velocity = ((elijah.transform.position + new Vector3(0,4,0)) - player.transform.position).normalized * 4.2f;
         yield return new WaitWhile(() => rLine1.isPlaying);
         // Elijah
         eLine3.Play();
+        jokePackage.gameObject.SetActive(false);
         yield return new WaitWhile(() => eLine3.isPlaying);
         eLine4.Play();
         yield return new WaitWhile(() => eLine4.isPlaying);
-        eLine5.Play();
-        yield return new WaitWhile(() => eLine5.isPlaying);
+        //eLine5.Play();
+        //yield return new WaitWhile(() => eLine5.isPlaying);
         // Ryder
         rLine2.Play();
         yield return new WaitWhile(() => rLine2.isPlaying);
         // Elijah
-        eLine6.Play();
-        yield return new WaitWhile(() => eLine6.isPlaying);
-        eLine7.Play();
-        yield return new WaitWhile(() => eLine7.isPlaying);
+        //eLine6.Play();
+        //yield return new WaitWhile(() => eLine6.isPlaying);
+        //eLine7.Play();
+        //yield return new WaitWhile(() => eLine7.isPlaying);
         eLine8.Play();
         yield return new WaitWhile(() => eLine8.isPlaying);
         // Ryder
@@ -121,4 +127,16 @@ public class ElijahScene : MonoBehaviour {
         teleportSpots.SetActive(true);
         okayToTriggerDialogueThree = true;
     }
+
+    bool distanceIsCloseEnough()
+    {
+        if ((elijah.transform.position - player.transform.position).magnitude < 5)
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
 }
+ 

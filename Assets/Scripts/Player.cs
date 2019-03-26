@@ -28,7 +28,6 @@ public class Player : MonoBehaviour
         playerPosition.y += playerHeight;
         // Fade out
         fader.FadeOut(true);
-        Debug.Log("Printing");
         // Move Player.
         fader.OnFadeComplete += MoveTo;
     }

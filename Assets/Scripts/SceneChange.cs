@@ -11,6 +11,7 @@ public class SceneChange : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.Log(sceneToLoad);
         clickable.OnClick += ChangeScene;
     }
 
@@ -21,6 +22,7 @@ public class SceneChange : MonoBehaviour
 
     public void ChangeScene()
     {
+        Debug.Log("Trying to load scene");
         Application.LoadLevel(sceneToLoad);
     }
 }

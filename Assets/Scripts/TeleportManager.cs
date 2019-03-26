@@ -29,6 +29,7 @@ public class TeleportManager : MonoBehaviour
     {
         if (DoTeleport != null)
         {
+            Debug.Log("Trying to teleport");
             DoTeleport(reticleTransform);
         }
         else
